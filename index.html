@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+  @license
+  Copyright 2019 Google LLC. All Rights Reserved.
+  SPDX-License-Identifier: Apache-2.0
+-->
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<html>
+  <head>
+    <title>La Norteña Envios</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+   <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="title">
+          <h1 id="title">Envios</h1>
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Rivas 795..." />
+        <button id="geocode-button">Buscar</button>
+      </div>
+      <div>
+        <h2 id="noti"></h2>
+      </div>
+      </div>
+      <div class="mapa">
+        <div id="map"></div>
+      </div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD56NEC7ueM-pVJj-95WUJRvXuujgqFPrU&callback=initMap&libraries=places&v=weekly"
+      defer
+    ></script>
+    <script src="poly.js"></script>
+  </body>
+</html>
